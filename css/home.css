@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Roc Grotesk Medium */
+@font-face {
+  font-family: "RocGroteskMedium";
+  src: url("fonts/Fontspring-DEMO-rocgrotesk-medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Consola */
+@font-face {
+  font-family: "Consola";
+  src: url("fonts/CONSOLA.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roc Grotesk Wide Bold */
+@font-face {
+  font-family: "RocGroteskWideBold";
+  src: url("fonts/Fontspring-DEMO-rocgroteskwide-bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.body-index {
+  color: #fff;
+  background: url("../img/cortis-bg.png") #000000 no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-home {
+  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  max-width: 550px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: rgba(113, 113, 113, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 5px;
+  padding: 10px 25px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.nav-bar a:hover {
+  opacity: 0.7;
+}
+
+.main-index {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 1000px;
+  padding: 0 20px 40px;
+  margin-left: 80px;
+}
+
+.title-main h1 {
+  font-family: "RocGroteskWideBold", "Arial", sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.title-main h2 {
+  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  display: inline-block;
+  color: #062137;
+  background: #1c649f;
+  padding: 4px 5px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 10px;
+  border-radius: 5px;
+  vertical-align: super;
+}
+
+.title-main span {
+  display: inline-block;
+  color: #062137;
+  opacity: 0.4;
+  animation: revelar 2s ease forwards;
+}
+
+/* Definindo o delay para cada letra */
+.title-main span:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.title-main span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.title-main span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.title-main span:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.title-main span:nth-child(5) {
+  animation-delay: 1s;
+}
+.title-main span:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+@keyframes revelar {
+  0% {
+    color: #062137;
+    opacity: 0.4;
+  }
+  100% {
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.text-main {
+  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #cccccc;
+  max-width: 600px;
+}
+
+.footer-index {
+  display: flex;
+  justify-content: center;
+  background: rgba(113, 113, 113, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 30px auto;
+  max-width: 330px;
+  flex-grow: 0;
+}
+
+.social-media {
+  display: flex;
+  gap: 60px;
+  flex-grow: 1;
+}
+
+.social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width:750px) {
+  .body-index {
+     background: url("../img/mobile.png") #000000 no-repeat center center/cover;
+  }
+  .main-index {
+    margin-left: 20px;
+    padding-bottom: 30px;
+  }
+  .title-main h1 {
+    font-size: 48px;
+  }
+  .title-main h2 {
+    font-size: 18px;
+    margin-left: 5px;
+    padding: 3px 4px;
+  }
+  .text-main {
+    font-size: 16px;
+    max-width: 300px;
+  }
+  .nav-bar ul {
+    gap: 10px;
+    max-width: 300px;
+  }
+  .nav-bar a {
+    font-size: 12px;
+  }
+  .social-media {
+    gap: 30px;
+  }
+}

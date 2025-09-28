@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-discography {
+  background-color: #161615;
+}
+
+.header-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.main-discography {
+  padding: 0 140px;
+  margin-top: 60px;
+}
+
+.album {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 80px;
+  align-items: flex-end;
+}
+
+.album-info h1 {
+  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  max-width: 300px;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.album-cover img {
+  box-shadow: -6px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.album-info h2 {
+  font-family: "Consolas", "Arial", sans-serif;
+  font-size: 18px;
+  color: #B3B3B3;
+  margin-bottom: 5px;
+}
+
+.album-info p {
+  font-family: "Consolas", "Arial", sans-serif;
+  font-size: 16px;
+  color: #0484EE;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.songs-section h1 {
+  display: inline-block;
+  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #0484EE;
+}
+
+.songs-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 90px;
+}
+
+.song {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.song img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.song .song-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  font-family: "Consolas", "Arial", monospace;
+  font-size: 1.5rem;
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.song:hover img {
+  opacity: 0.4;
+}
+
+.song:hover .song-title {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .main-discography {
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+  .songs-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .album {
+    gap: 20px;
+  }
+  .album-info h1 {
+    font-size: 16px;
+    max-width: 500px;
+  }
+  .album-info h2 {
+    font-size: 14px;
+  }
+  .album-info p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .album-cover img {
+    width: 100%;
+  }
+  .social-links {
+    gap: 12px;
+  }
+}
