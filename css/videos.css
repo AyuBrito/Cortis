@@ -45,14 +45,14 @@ body.body-profile {
 }
 
 .video-title {
-  font-family: "Consola", "Arial", monospace;
+  font-family: "Arial", monospace;
   font-size: 1.2rem;
   color: #cccccc;
   margin: 10px 0;
 }
 
 .video-texts h2:first-child {
-  font-family: "RocGroteskWideBold", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 5px;
@@ -61,14 +61,14 @@ body.body-profile {
 }
 
 .video-texts h2:nth-child(2) {
-  font-family: "RocGroteskWideBold", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 1.2rem;
   color: #fff;
   margin-bottom: 15px;
 }
 
 .video-texts p {
-  font-family: "Consola", "Arial", monospace;
+  font-family:  "Arial", monospace;
   font-size: 0.9rem;
   line-height: 1.5;
   color: #cccccc;

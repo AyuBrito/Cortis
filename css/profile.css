@@ -62,7 +62,7 @@ body.body-profile {
 .nav-links li a {
   text-decoration: none;
   color: #b3b3b3;
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 18px;
   transition: 0.2s;
 }
@@ -81,7 +81,7 @@ body.body-profile {
 }
 
 .header-content .title {
-  font-family: "RocGroteskWideBold", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 48px;
   font-weight: bold;
   color: #0076ff;
@@ -91,10 +91,15 @@ body.body-profile {
 .content {
   display: flex;
   flex-grow: 1;
-  align-items: center;
   margin: 20px auto;
   max-width: 1000px;
-  gap: 40px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .side-names {
@@ -106,7 +111,7 @@ body.body-profile {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -144,13 +149,13 @@ body.body-profile {
 }
 
 .profile .info h2 {
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   color: #ffffff;
   font-size: 28px;
 }
 
 .profile .info p {
-  font-family: "Consola", "Arial", monospace;
+  font-family: "Arial", monospace;
   font-size: 14px;
   color: #cccccc;
 }
@@ -183,6 +188,12 @@ body.body-profile {
       gap: 5px;
       margin: 10px auto;
       max-width: 95%;
+    }
+    .profile-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 20px;
     }
     .side-names {
       text-align: right;

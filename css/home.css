@@ -4,30 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Roc Grotesk Medium */
-@font-face {
-  font-family: "RocGroteskMedium";
-  src: url("fonts/Fontspring-DEMO-rocgrotesk-medium.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Consola */
-@font-face {
-  font-family: "Consola";
-  src: url("fonts/CONSOLA.TTF") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Roc Grotesk Wide Bold */
-@font-face {
-  font-family: "RocGroteskWideBold";
-  src: url("fonts/Fontspring-DEMO-rocgroteskwide-bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
 .body-index {
   color: #fff;
   background: url("../img/cortis-bg.png") #000000 no-repeat center center/cover;
@@ -39,7 +15,8 @@
 }
 
 .menu-home {
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: bold;
   max-width: 550px;
   position: absolute;
   top: 50px;
@@ -83,14 +60,14 @@
 }
 
 .title-main h1 {
-  font-family: "RocGroteskWideBold", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 64px;
   font-weight: bold;
   display: inline-block;
 }
 
 .title-main h2 {
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   display: inline-block;
   color: #062137;
   background: #1c649f;
@@ -141,7 +118,7 @@
 }
 
 .text-main {
-  font-family: "RocGroteskMedium", "Arial", sans-serif;
+  font-family: "Familjen Grotesk", sans-serif;
   font-size: 18px;
   line-height: 1.25;
   color: #cccccc;
