@@ -28,31 +28,31 @@ const membros = {
     nome: "MARTIN",
     nomeKr: "마틴",
     nascimento: "Date of Birth: March 20, 2008",
-    foto: "./img/membros/martin.png"
+    foto: "img/membros/martin.png"
   },
   james: {
     nome: "JAMES",
     nomeKr: "제임스",
     nascimento: "Date of Birth: October 14, 2005",
-    foto: "./img/membros/james.png"
+    foto: "img/membros/james.png"
   },
   juhoon: {
     nome: "JUHOON",
     nomeKr: "주훈",
     nascimento: "Date of Birth: January 3, 2008",
-    foto: "./img/membros/juhoon.png"
+    foto: "img/membros/juhoon.png"
   },
   seonghyeon: {
     nome: "SEONGHYEON",
     nomeKr: "성현",
     nascimento: "Date of Birth: July 15, 2008",
-    foto: "./img/membros/seonghyeon.png"
+    foto: "img/membros/seonghyeon.png"
   },
   keonho: {
     nome: "KEONHO",
     nomeKr: "건호",
     nascimento: "Date of Birth: February 14, 2009",
-    foto: "./img/membros/keonho.png"
+    foto: "img/membros/keonho.png"
   }
 };
 
